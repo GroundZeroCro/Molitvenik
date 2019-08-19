@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.text.TextFragment">
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.text.TextFragment"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                fontPath="@string/title_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/mayor_padding"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mayor_search_text"
+                tools:ignore="MissingPrefix" />
+
+            <include layout="@layout/external_divider_fragment_text"
+                android:layout_marginLeft="@dimen/mayor_padding"
+                android:layout_marginRight="@dimen/mayor_padding"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="@dimen/mayor_padding"
+                android:paddingRight="@dimen/mayor_padding"/>
+
+            <TextView
+                android:id="@+id/text"
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:padding="@dimen/mayor_padding"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mayor_text"
+                tools:ignore="MissingPrefix" />
+
+            <include layout="@layout/external_divider_fragment_text"
+                android:layout_marginLeft="@dimen/mayor_padding"
+                android:layout_marginRight="@dimen/mayor_padding"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="@dimen/mayor_padding"
+                android:paddingRight="@dimen/mayor_padding" />
+
+            <LinearLayout
+                android:id="@+id/add_to_favorites_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/mayor_padding">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/heart_outlined_svg"
+                    android:tint="@color/secondaryDarkColor" />
+
+                <TextView
+                    android:id="@+id/add_to_favorites_text"
+                    fontPath="@string/text_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mayor_padding"
+                    android:layout_marginLeft="@dimen/mayor_padding"
+                    android:scrollbars="vertical"
+                    android:text="@string/add_to_favorites"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/mayor_text"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/remove_from_favorites_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/mayor_padding">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/remove_from_favorites_svg"
+                    android:tint="@color/primaryTextColor" />
+
+                <TextView
+                    android:id="@+id/remove_from_favorites_text"
+                    fontPath="@string/text_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mayor_padding"
+                    android:layout_marginLeft="@dimen/mayor_padding"
+                    android:scrollbars="vertical"
+                    android:text="@string/remove_from_favorites"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/mayor_text"
+                    tools:ignore="MissingPrefix"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/mayor_padding"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SeekBar
+            android:id="@+id/text_size_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/seek_bar_background"
+            android:max="15"
+            android:padding="@dimen/minor_padding"
+            android:progress="7"
+            android:thumb="@drawable/text_size_svg" />
+
+        <ImageButton
+            android:id="@+id/text_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/text_controller"
+            android:src="@drawable/controls_svg"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

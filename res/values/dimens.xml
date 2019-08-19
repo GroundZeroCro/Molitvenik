@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="mayor_padding">16dp</dimen>
+    <dimen name="minor_padding">4dp</dimen>
+    <dimen name="title">15sp</dimen>
+    <dimen name="mayor_search_text">19sp</dimen>
+    <dimen name="title_text">18sp</dimen>
+    <dimen name="mayor_text">16sp</dimen>
+    <dimen name="normal_text">16sp</dimen>
+    <dimen name="minor_text">14sp</dimen>
+    <dimen name="corner_radius_high">40dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="divider_height_mayor">2dp</dimen>
+    <dimen name="display_warning_text">30sp</dimen>
+    <dimen name="alarm_time_indicator">77sp</dimen>
+    <dimen name="settings_title_text">21sp</dimen>
+    <dimen name="settings_subtitle_text">16sp</dimen>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_prayer_list_underline_background_white"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/mayor_padding"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/normal_text" />
+
+    <LinearLayout
+        android:id="@+id/live_item_menu_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/mayor_padding"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/delete_message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/mayor_padding"
+            android:layout_marginBottom="@dimen/mayor_padding"
+            android:src="@drawable/eraser_svg" />
+    </LinearLayout>
+
+</LinearLayout>

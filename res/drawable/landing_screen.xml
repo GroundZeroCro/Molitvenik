@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/main_background_gradient"
+        android:gravity="center"/>
+    <item android:drawable="@mipmap/splash_logo_7"
+        android:bottom="100dp"
+        android:height="295dp"
+        android:width="240dp"
+        android:gravity="center" />
+</layer-list>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dailyReadingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/open_book_svg"
+        android:title="@string/daily_readings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/alarmFragment"
+        android:enabled="true"
+        android:icon="@drawable/alarm_clock_svg"
+        android:title="@string/alarm"
+        app:showAsAction="ifRoom" />
+
+    <group android:id="@+id/network">
+        <item
+            android:id="@+id/rateApplication"
+            android:enabled="true"
+            android:icon="@drawable/thumb_up_svg"
+            android:title="@string/rate_us"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/shareApplication"
+            android:enabled="true"
+            android:icon="@drawable/share_svg"
+            android:title="@string/share"
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <group android:id="@+id/other">
+        <item
+            android:id="@+id/settingsFragment"
+            android:enabled="true"
+            android:icon="@drawable/settings_svg"
+            android:title="@string/settings"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/aboutFragment"
+            android:enabled="true"
+            android:icon="@drawable/info_svg"
+            android:title="@string/about"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

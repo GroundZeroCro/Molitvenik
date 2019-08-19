@@ -1,0 +1,74 @@
+<resources>
+    <!--Application-->
+    <string name="app_name">Molitvenik</string>
+    <!--Fonts-->
+    <string name="title_font">fonts/PlayfairDisplay-Regular.ttf</string>
+    <string name="text_font">fonts/Barlow-Regular.ttf</string>
+    <!--Dynamic -->
+    <string name="prayer_length">%1$s slova.</string>
+    <!--XML-->
+    <string name="text_controller">text_controller</string>
+    <!--Buttons-->
+    <string name="add_to_favorites">Dodaj u favorite</string>
+    <!--Hints-->
+    <string name="search_prayer">Traži..</string>
+    <!--Error messages-->
+    <string name="error_fetching_data">Greška u učitavanju podataka</string>
+    <string name="error_fetching_tab_data">Pogreška prilikom učitavanja menija</string>
+    <!--Bottom navigation tabs-->
+    <string name="favorites">Favoriti</string>
+    <string name="live_prayers">Osobne</string>
+    <string name="search">Traži</string>
+    <string name="prayers">Molitve</string>
+    <string name="send_message">Upiši molitvu ili potrebu..</string>
+    <string name="dialog_delete_live_message_title">Brisanje</string>
+    <string name="dialog_delete_live_message_message">Sigurno želite obrisati poruku?</string>
+    <string name="dialog_delete_live_message_button_yes">Obriši</string>
+    <string name="dialog_delete_live_message_button_no">Ne</string>
+    <string name="dialog_add_live_message_title">Potvrda</string>
+    <string name="dialog_add_live_message_message">Sigurno želite dodati ovu poruku?</string>
+    <string name="dialog_add_live_message_button_yes">Dodaj</string>
+    <string name="dialog_add_live_message_button_no">Ne</string>
+    <string name="dialog_add_prayer_favorites_title">Potvrda</string>
+    <string name="dialog_add_prayer_favorites_message">Želite li dodati ovu molitvu u favorite?</string>
+    <string name="dialog_add_prayer_favorites_button_yes">Dodaj</string>
+    <string name="dialog_add_prayer_favorites_button_no">Ne želim</string>
+    <string name="remove_from_favorites">Makni iz favorita</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="dialog_remove_prayer_favorites_title">Potvrda</string>
+    <string name="dialog_remove_prayer_favorites_message">Želite li maknuti ovu molitvu iz favorita?</string>
+    <string name="dialog_remove_prayer_favorites_button_yes">Želim</string>
+    <string name="dialog_remove_prayer_favorites_button_no">Ne želim</string>
+    <string name="empty_favorites">Nema favorita</string>
+    <string name="toast_prayer_added_to_favorites">Molitva uspješno dodana u favorite</string>
+    <string name="toast_prayer_removed_from_favorites">Molitva uspješno maknuta iz favorita</string>
+    <string name="toast_live_message_added">Poruka je uspješno poslana</string>
+    <string name="toast_live_message_deleted">Poruka je uspješno izbrisana</string>
+    <string name="about">O aplikaciji</string>
+    <string name="settings">Postavke</string>
+    <string name="alarm">Molitveni alarm</string>
+    <string name="rate_us">Ocijeni applikaciju</string>
+    <string name="share">Podijeli</string>
+    <string name="app_title">Katolički Molitvenik</string>
+    <string name="daily_readings">Dnevna čitanja</string>
+    <string name="quit_scheduler">Odustani</string>
+    <string name="submit_scheduler">Prihvati</string>
+
+    <array name="days_of_week">
+        <item>@string/day_mo</item>
+        <item>@string/day_tu</item>
+        <item>@string/day_wed</item>
+        <item>@string/day_th</item>
+        <item>@string/day_fr</item>
+        <item>@string/day_sa</item>
+        <item>@string/day_su</item>
+    </array>
+
+    <string name="day_mo">Pon</string>
+    <string name="day_tu">Uto</string>
+    <string name="day_wed">Sri</string>
+    <string name="day_th">Čet</string>
+    <string name="day_fr">Pet</string>
+    <string name="day_sa">Sub</string>
+    <string name="day_su">Ned</string>
+</resources>

@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryMediumColor"
+    android:orientation="vertical"
+    tools:context=".ui.alarm.AlarmFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/exit_scheduler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primaryLightColor"
+            android:text="@string/quit_scheduler"
+            android:textColor="@color/primaryTextColor" />
+
+        <Button
+            android:id="@+id/submit_scheduler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primaryLightColor"
+            android:text="@string/submit_scheduler"
+            android:textColor="@color/primaryTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scheduler_time_parent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/mayor_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/scheduler_hour_up_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_up_triangle_svg"
+                android:tint="@color/primaryLightestColor" />
+
+            <TextView
+                android:id="@+id/scheduler_time_hours"
+                fontPath="@string/text_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/alarm_time_indicator"
+                tools:ignore="MissingPrefix" />
+
+            <ImageButton
+                android:id="@+id/scheduler_hour_down_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_down_triangle_svg"
+                android:tint="@color/primaryLightestColor" />
+        </LinearLayout>
+
+        <TextView
+            fontPath="@string/text_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/alarm_time_indicator"
+            tools:ignore="MissingPrefix" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/scheduler_minutes_up_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_up_triangle_svg"
+                android:tint="@color/primaryLightestColor" />
+
+            <TextView
+                android:id="@+id/scheduler_time_minutes"
+                fontPath="@string/text_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/alarm_time_indicator"
+                tools:ignore="MissingPrefix" />
+
+            <ImageButton
+                android:id="@+id/scheduler_minutes_down_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_down_triangle_svg"
+                android:tint="@color/primaryLightestColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryTextColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/day_mo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_mo"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/day_tu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_tu"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/day_we_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_wed"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/day_th_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_th"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/day_fr_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_fr"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/day_sa_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_sa"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/day_su_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primaryLightColor"
+                android:text="@string/day_su"
+                android:textColor="@color/primaryTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_padding">
+
+            <TextView
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vrsta"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="@dimen/settings_title_text"
+                app:layout_constraintTop_toBottomOf="@id/scheduler_time_parent"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zvuk"
+                android:textColor="@color/secondaryTextGrayColor"
+                android:textSize="@dimen/settings_subtitle_text"
+                app:layout_constraintTop_toBottomOf="@id/scheduler_time_parent"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+        <include layout="@layout/external_divider_fragment_scheduler" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_padding">
+
+            <TextView
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ton"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="@dimen/settings_title_text"
+                app:layout_constraintTop_toBottomOf="@id/scheduler_time_parent"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Happy song"
+                android:textColor="@color/secondaryTextGrayColor"
+                android:textSize="@dimen/settings_subtitle_text"
+                app:layout_constraintTop_toBottomOf="@id/scheduler_time_parent"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/normal_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/speaker_svg"
+                android:tint="@color/primaryLightColor" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/minor_padding" />
+        </LinearLayout>
+
+        <include layout="@layout/external_divider_fragment_scheduler" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryTextColor"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_padding">
+
+            <TextView
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Naziv"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="@dimen/settings_title_text"
+                app:layout_constraintTop_toBottomOf="@id/scheduler_time_parent"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/title_scheduler"
+                fontPath="@string/text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/primaryDarkColor"
+                android:textColorHighlight="@color/secondaryDarkColor"
+                android:textSize="@dimen/settings_title_text"
+                app:layout_constraintTop_toBottomOf="@id/scheduler_time_parent"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+{
+  "categories": [
+    {
+      "category_id": "1",
+      "category_name": "molitve",
+      "prayers": [
+        {
+          "title": "Vjerovanje apostolsko.",
+          "text": "Vjerujem u Boga, Oca svemogućega, Stvoritelja neba i zemlje.\n\nI u Isusa Krista, Sina njegova jedinoga, Gospodina našega, koji je začet po Duhu Svetom, rođen od Marije Djevice, mučen pod Poncijem Pilatom, raspet umro i pokopan; sašao nad pakao, treći dan uskrsnuo od mrtvih; uzašao na nebesa, sjedi o desnu Boga Oca svemogućega; odonud će doći suditi žive i mrtve.\n\nVjerujem u Duha Svetoga, svetu Crkvu katoličku, općinstvo svetih, oproštenje grijeha, uskrsnuće tijela i život vječni. Amen. "
+        },
+        {
+          "title": "NICEJSKO-CARIGRADSKO VJEROVANJE",
+          "text": "Vjerujem u jednoga Boga, Oca svemogućega, stvoritelja neba i zemlja, svega vidljivoga i nevidljivoga. I u jednoga Gospodina Isusa Krista, jedinorođenoga Sina Božjega. Rođenog od Oca prije svih vjekova. Boga od Boga, svjetlo od svjetla, pravoga Boga od pravoga Boga. Rođena, ne stvorena, istobitna s Ocem, po kome je sve stvoreno. Koji je radi nas ljudi i radi našega spasenja sišao s nebesa. I utjelovio se po Duhu Svetom od Marije Djevice: i postao čovjekom. Raspet također za nas: pod Poncijem Pilatom mučen i pokopan. I uskrsnuo treći dan, po Svetom Pismu. I uzašao na nebo: sjedi s desne Ocu. I opet će doći u slavi suditi žive i mrtve, i njegovu kraljevstvu neće biti kraja. I u Duha Svetoga, Gospodina i životvorca; koji izlazi od Oca i Sina. Koji se s Ocem i Sinom skupa časti i zajedno slavi; koji je govorio po prorocima. I u jednu svetu katoličku i apostolsku Crkvu. Ispovijedam jedno krštenje za oproštenje grijeha. I iščekujem uskrsnuće mrtvih. I život budućega vijeka. Amen."
+        },
+        {
+          "title": "OČE NAŠ",
+          "text": "Oče naš, koji jesi na nebesima,\nsveti se ime tvoje,\ndođi kraljevstvo tvoje,\nbudi volja tvoja,\nkako na nebu tako i na zemlji.\nKruh naš svagdanji daj nam danas.\nI otpusti nam duge naše\nkako i mi otpuštamo dužnicima našim.\nI ne uvedi nas u napast,\nnego izbavi nas od zla. Amen."
+        },
+        {
+          "title": "ZDRAVO MARIJO",
+          "text": "Zdravo Marijo, milosti puna,\nGospodin s tobom!\nBlagoslovljena ti među ženama,\ni blagoslovljen plod utrobe tvoje Isus.\nSveta Marijo, Majko Božja,\nmoli za nas grešnike\nsada i na čas smrti naše. Amen."
+        }
+      ]
+    },
+    {
+      "category_id": "2",
+      "category_name": "krunice",
+      "prayers": [
+        {
+          "title": "Prva krunica naslov.",
+          "text": "Tekst prve krunice."
+        },
+        {
+          "title": "Druga krunica naslov.",
+          "text": "Tekst druge krunice."
+        }
+      ]
+    },
+    {
+      "category_id": "3",
+      "category_name": "Litanije",
+      "prayers": [
+        {
+          "title": "Prva krunica naslov.",
+          "text\": \"Tekst prve krunice.\"\n        },\n        {\n          \"title\": \"Druga krunica naslov.\",\n          \"prayer": "Tekst druge krunice."
+        }
+      ]
+    },
+    {
+      "category_id": "4",
+      "category_name": "Favoriti",
+      "prayers": [
+        {
+          "title": "Prva krunica naslov.",
+          "text": "Tekst prve krunice."
+        },
+        {
+          "title": "Druga krunica naslov.",
+          "text": "Tekst druge krunice."
+        }
+      ]
+    },
+    {
+      "category_id": "5",
+      "category_name": "krunice",
+      "prayers": [
+        {
+          "title": "Prva krunica naslov.",
+          "text": "Tekst prve krunice."
+        },
+        {
+          "title": "Druga krunica naslov.",
+          "text": "Tekst druge krunice."
+        }
+      ]
+    },
+    {
+      "category_id": "6",
+      "category_name": "krunice",
+      "prayers": [
+        {
+          "title": "Prva krunica naslov.",
+          "text": "Tekst prve krunice."
+        },
+        {
+          "title": "Druga krunica naslov.",
+          "text": "Tekst druge krunice."
+        }
+      ]
+    }
+  ]
+}

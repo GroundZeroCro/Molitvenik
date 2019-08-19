@@ -1,0 +1,23 @@
+<resources>
+    <color name="primaryColor">#000E28</color>
+    <color name="primaryColorAlpha">#50000E28</color>
+    <color name="primaryLightColor">#0E336B</color>
+    <color name="primaryLightColorAlpha">#700E336B</color>
+    <color name="primaryMediumColor">#08234f</color>
+    <color name="primaryDarkColor">#061939</color>
+    <color name="primaryLightestColor">#1A4B97</color>
+    <color name="secondaryColor">#FFCC80</color>
+    <color name="secondaryColorMiddleAlpha">#50FFCC80</color>
+    <color name="secondaryDarkColor">#DD2447</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextGrayColor">#8E8F91</color>
+    <color name="primaryTextColorMediumAlpha">#50ffffff</color>
+    <color name="primaryTextColorHighAlpha">#20ffffff</color>
+    <color name="primaryTextColorDark">#B6B6B6</color>
+    <color name="green">#76B700</color>
+
+    <color name="primaryShaderLight">#041126</color>
+    <color name="rippleColor">#003aa5</color>
+
+</resources>
+
