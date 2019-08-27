@@ -10,20 +10,16 @@ import com.mario.molitvenik.data.persistance.alarm.Ringtone;
 import com.mario.molitvenik.data.persistance.alarm.RingtoneService;
 import com.mario.molitvenik.data.persistance.settings.UserSettingsRepository;
 import com.mario.molitvenik.util.AlarmUtils;
-import com.orhanobut.logger.Logger;
 
 import java.util.Calendar;
 import java.util.List;
 
-import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
-// TODO is disposable in this class leaking?
-@Singleton
 public class AlarmViewModel extends BaseViewModel {
 
   private AlarmRepository alarmRepository;
@@ -34,8 +30,7 @@ public class AlarmViewModel extends BaseViewModel {
 
   private Alarm alarm;
 
-  @Inject
-  AlarmViewModel(
+  public AlarmViewModel(
           AlarmRepository alarmRepository,
           UserSettingsRepository userSettingsRepository,
           RingtoneService ringtoneService) {

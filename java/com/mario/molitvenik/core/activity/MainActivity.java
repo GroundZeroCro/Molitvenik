@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity implements
     Logger.addLogAdapter(new AndroidLogAdapter());
     loadViews();
     plugFragmentsWithBottomView();
-    // TODO remove
-    navHostFragment.getNavController().navigate(R.id.alarmFragment);
+    // TODO remove. Used in process of building alarm feature.
+    // navHostFragment.getNavController().navigate(R.id.alarmFragment);
   }
 
   private void loadViews() {

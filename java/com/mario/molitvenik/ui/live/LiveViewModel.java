@@ -33,7 +33,6 @@ public class LiveViewModel extends BaseViewModel {
   private MutableLiveData<LiveMenu> liveMenuMutableLiveData = new MutableLiveData<>();
   private LiveMenu liveMenu = new LiveMenu();
 
-  @Inject
   public LiveViewModel(LiveRepository liveRepository, UserSettingsRepository userSettingsRepository) {
     super(userSettingsRepository);
     this.liveRepository = liveRepository;

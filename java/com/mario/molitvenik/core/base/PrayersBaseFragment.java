@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,7 +13,6 @@ import com.mario.molitvenik.R;
 import com.mario.molitvenik.data.common.Prayer;
 import com.mario.molitvenik.data.json.LocalService;
 import com.mario.molitvenik.ui.common.PrayersAdapter;
-import com.mario.molitvenik.ui.common.dialog.decision.DecisionDialog;
 import com.mario.molitvenik.ui.prayers.PrayersRecyclerItem;
 import com.mario.molitvenik.ui.prayers.PrayersViewModel;
 import com.mario.molitvenik.util.Sort;
@@ -23,19 +23,18 @@ import javax.inject.Inject;
 
 public class PrayersBaseFragment extends BaseFragment implements PrayersRecyclerItem {
 
-  private PrayersAdapter prayersAdapter;
-  private Sort sortType;
-
   @Inject
   LocalService localService;
-  @Inject
-  protected PrayersViewModel prayersViewModel;
 
+  private PrayersAdapter prayersAdapter;
+  private Sort sortType;
+  protected PrayersViewModel prayersViewModel;
 
   @Override
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    prayersViewModel = ViewModelProviders.of(getActivity(), viewModelFactory).get(PrayersViewModel.class);
   }
 
   protected RecyclerView mutualRecyclerView(RecyclerView recyclerView) {

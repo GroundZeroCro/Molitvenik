@@ -13,19 +13,19 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mario.molitvenik.R;
 import com.mario.molitvenik.core.base.PrayersBaseFragment;
 import com.mario.molitvenik.data.handler.Status;
+import com.mario.molitvenik.ui.text.TextViewModel;
 
 import javax.inject.Inject;
 
 public class SearchFragment extends PrayersBaseFragment {
 
-  @Inject
-  SearchViewModel searchViewModel;
-
+  private SearchViewModel searchViewModel;
   private RecyclerView searchRecyclerView;
   private ProgressBar searchProgressBar;
 
@@ -33,6 +33,7 @@ public class SearchFragment extends PrayersBaseFragment {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    searchViewModel = ViewModelProviders.of(this, viewModelFactory).get(SearchViewModel.class);
   }
 
   @Override

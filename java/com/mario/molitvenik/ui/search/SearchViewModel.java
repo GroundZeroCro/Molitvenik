@@ -16,7 +16,6 @@ public class SearchViewModel extends ViewModel {
 
   private LocalRepository localRepository;
 
-  @Inject
   public SearchViewModel(LocalRepository localRepository) {
     this.localRepository = localRepository;
   }

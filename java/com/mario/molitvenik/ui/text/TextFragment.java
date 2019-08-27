@@ -12,11 +12,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 
 import com.mario.molitvenik.R;
 import com.mario.molitvenik.core.base.PrayersBaseFragment;
 import com.mario.molitvenik.data.common.Prayer;
 import com.mario.molitvenik.data.persistance.settings.UserSettings;
+import com.mario.molitvenik.ui.common.ViewModelFactory;
 import com.mario.molitvenik.ui.common.dialog.decision.DecisionResponse;
 import com.mario.molitvenik.ui.common.dialog.decision.DecisionType;
 
@@ -44,13 +46,13 @@ public class TextFragment extends PrayersBaseFragment implements DecisionRespons
   @BindView(R.id.remove_from_favorites_text)
   TextView removeFromFavoritesText;
 
-  @Inject
-  TextViewModel textViewModel;
+  private TextViewModel textViewModel;
 
   @Override
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    textViewModel = ViewModelProviders.of(this, viewModelFactory).get(TextViewModel.class);
   }
 
   @Override

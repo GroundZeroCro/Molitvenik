@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,6 +17,7 @@ import com.mario.molitvenik.R;
 import com.mario.molitvenik.core.activity.BottomNavigationCallback;
 import com.mario.molitvenik.core.base.BaseFragment;
 import com.mario.molitvenik.data.persistance.alarm.Alarm;
+import com.mario.molitvenik.ui.favorites.FavoritesViewModel;
 
 import java.util.ArrayList;
 
@@ -30,9 +32,7 @@ public class AlarmFragment extends BaseFragment implements AlarmCallback {
   @BindView(R.id.alarm_recycler_view)
   RecyclerView alarmRecyclerView;
 
-  @Inject
-  AlarmViewModel alarmViewModel;
-
+  private AlarmViewModel alarmViewModel;
   private BottomNavigationCallback bottomNavigationCallback;
   private AlarmAdapter alarmAdapter;
 
@@ -40,6 +40,7 @@ public class AlarmFragment extends BaseFragment implements AlarmCallback {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    alarmViewModel = ViewModelProviders.of(this, viewModelFactory).get(AlarmViewModel.class);
   }
 
   @Override

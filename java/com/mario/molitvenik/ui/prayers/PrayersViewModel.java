@@ -26,7 +26,6 @@ public class PrayersViewModel extends ViewModel implements TabSelection<PrayerCa
 
   private LocalRepository localRepository;
 
-  @Inject
   public PrayersViewModel(LocalRepository localRepository) {
     this.localRepository = localRepository;
   }

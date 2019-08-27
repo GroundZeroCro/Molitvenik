@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mario.molitvenik.R;
@@ -20,6 +21,7 @@ import com.mario.molitvenik.core.base.BaseFragment;
 import com.mario.molitvenik.data.remote.LiveMessage;
 import com.mario.molitvenik.ui.common.dialog.decision.DecisionResponse;
 import com.mario.molitvenik.ui.common.dialog.decision.DecisionType;
+import com.mario.molitvenik.ui.prayers.PrayersViewModel;
 import com.mario.molitvenik.util.AndroidUtils;
 import com.mario.molitvenik.util.ViewUtils;
 
@@ -42,14 +44,13 @@ public class LiveFragment extends BaseFragment implements LiveRecyclerItem, Deci
   private RecyclerView liveRecyclerView;
   private LiveAdapter liveAdapter;
   private LiveAnimations liveAnimations = new LiveAnimations();
-
-  @Inject
-  LiveViewModel liveViewModel;
+  private LiveViewModel liveViewModel;
 
   @Override
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    liveViewModel = ViewModelProviders.of(this, viewModelFactory).get(LiveViewModel.class);
   }
 
   @Override

@@ -5,18 +5,25 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mario.molitvenik.application.MyApplication;
 import com.mario.molitvenik.di.components.ApplicationComponent;
+import com.mario.molitvenik.ui.common.ViewModelFactory;
 import com.mario.molitvenik.ui.common.dialog.decision.DecisionDialog;
 import com.mario.molitvenik.ui.common.toast.ResultToast;
+
+import javax.inject.Inject;
 
 public class BaseFragment extends Fragment {
 
   protected DecisionDialog decisionDialog;
   protected ResultToast resultToast;
+
+  @Inject
+  public ViewModelFactory viewModelFactory;
 
   @Override
   public void onCreate(@Nullable Bundle savedInstanceState) {

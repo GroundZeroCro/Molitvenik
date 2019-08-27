@@ -16,7 +16,6 @@ public class TextViewModel extends BaseViewModel {
   private FavoritesRepository favoritesRepository;
   private MutableLiveData<Boolean> isPrayerFavorite = new MutableLiveData<>();
 
-  @Inject
   public TextViewModel(UserSettingsRepository userSettingsRepository, FavoritesRepository favoritesRepository) {
     super(userSettingsRepository);
     this.favoritesRepository = favoritesRepository;

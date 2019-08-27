@@ -21,7 +21,6 @@ public class FavoritesViewModel extends ViewModel {
 
   private FavoritesRepository favoritesRepository;
 
-  @Inject
   public FavoritesViewModel(FavoritesRepository favoritesRepository) {
     this.favoritesRepository = favoritesRepository;
   }

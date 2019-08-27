@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 
 import com.mario.molitvenik.R;
@@ -26,8 +27,8 @@ import butterknife.OnClick;
 
 public class SchedulerFragment extends BaseFragment {
 
-  @Inject
-  AlarmViewModel alarmViewModel;
+  private AlarmViewModel alarmViewModel;
+
   @BindView(R.id.title_scheduler)
   EditText titleSchedulerInput;
   @BindView(R.id.scheduler_time_hours)
@@ -44,6 +45,7 @@ public class SchedulerFragment extends BaseFragment {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    alarmViewModel = ViewModelProviders.of(this, viewModelFactory).get(AlarmViewModel.class);
   }
 
   @Override

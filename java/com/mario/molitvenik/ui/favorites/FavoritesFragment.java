@@ -10,11 +10,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mario.molitvenik.R;
 import com.mario.molitvenik.core.base.PrayersBaseFragment;
 import com.mario.molitvenik.data.handler.Status;
+import com.mario.molitvenik.ui.live.LiveViewModel;
 
 import javax.inject.Inject;
 
@@ -23,8 +25,7 @@ import butterknife.ButterKnife;
 
 public class FavoritesFragment extends PrayersBaseFragment {
 
-  @Inject
-  FavoritesViewModel favoritesViewModel;
+  private FavoritesViewModel favoritesViewModel;
 
   @BindView(R.id.favorites_recycler_view)
   RecyclerView favoritesRecyclerView;
@@ -37,6 +38,7 @@ public class FavoritesFragment extends PrayersBaseFragment {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getApplicationComponent().inject(this);
+    favoritesViewModel = ViewModelProviders.of(this, viewModelFactory).get(FavoritesViewModel.class);
   }
 
   @Override
